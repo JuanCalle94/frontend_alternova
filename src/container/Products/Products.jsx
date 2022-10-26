@@ -8,12 +8,6 @@ function Products() {
   return (
     <>
       <section className="products">
-        <div className="products__title">
-          <h1>
-            Welcome to <br />
-            Alternova Shop
-          </h1>
-        </div>
         <h2>Products</h2>
         <div className="products__container">
           {data.products.map((product, index) => {

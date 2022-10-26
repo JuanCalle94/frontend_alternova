@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import './Footer.scss';
+import "./Footer.scss";
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <>
+      <div className="footer">
+        <p className="footer__copyright">
+          <span>©2022 Alternova</span>
+          <br /> Todos los derechos reservados
+        </p>
+      </div>
+    </>
   );
 }
 
