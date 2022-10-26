@@ -1,0 +1,9 @@
+.cart {
+    @media screen and (min-width: 426px) {
+        grid-column: 2/3;
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-column: 3/4;
+    }
+}

@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { Header, Footer , Products , ShoppingCart } from './container';
-import './App.scss';
+import { Header, Footer, Products, ShoppingCart } from "./container";
+import "./App.scss";
 
 function App() {
   return (
     <div>
-    <Header />
-    <Products />
-    <ShoppingCart />
-    <Footer />
+      <Header />
+      <main className="main__container">
+        <Products />
+        <ShoppingCart />
+      </main>
+      <Footer />
     </div>
-  )
-};
+  );
+}
 
 export default App;

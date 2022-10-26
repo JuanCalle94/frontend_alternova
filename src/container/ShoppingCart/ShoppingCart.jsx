@@ -4,7 +4,11 @@ import './ShoppingCart.scss';
 
 function ShoppingCart() {
   return (
-    <div>ShoppingCart</div>
+    <>
+    <section className='cart'>
+      <p>ShoppingCart</p>
+    </section>
+    </>
   );
 }
 
