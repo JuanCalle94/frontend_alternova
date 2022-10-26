@@ -8,7 +8,7 @@ function Products() {
   return (
     <>
       <section className="products">
-        <h2>Products</h2>
+        <h2 className='title__h2'>Products</h2>
         <div className="products__container">
           {data.products.map((product, index) => {
             return <ProductCard {...product} key={index} />;

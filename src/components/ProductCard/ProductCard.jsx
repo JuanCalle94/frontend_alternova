@@ -1,9 +1,12 @@
-import React from "react";
-
+import React, {useContext} from "react";
+import { CartContext } from "../../context/CartContext";
 import defaultImg from "../../assets/defaultimg.png";
 import "./ProductCard.scss";
 
 function ProductCard(props) {
+
+  const {addItemToCart} = useContext(CartContext);
+
   return (
     <>
       <div className="productcard">
@@ -21,7 +24,7 @@ function ProductCard(props) {
               </p>
             </div>
             {props.stock > 0 ? (
-              <button className="productcard__button__cart">
+              <button onClick={()=>addItemToCart(props)} type="submit" className="productcard__button__cart">
                 <i className="fa-solid fa-cart-shopping"></i>
               </button>
             ) : (
