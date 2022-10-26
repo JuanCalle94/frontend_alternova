@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Footer , Products , ShoppingCart } from './container';
-import { Navbar } from "./components";
+import { Header, Footer , Products , ShoppingCart } from './container';
 import './App.scss';
 
 function App() {
   return (
     <div>
-    <Navbar />
+    <Header />
     <Products />
     <ShoppingCart />
     <Footer />

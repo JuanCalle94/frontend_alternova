@@ -20,7 +20,7 @@ function ProductCard(props) {
           </div>
           <div className="productcard__price__container">
             <div>
-              <p className="productcard__price__tittle">Precio:</p>
+              <p className="productcard__price__tittle">Price:</p>
               <p className="productcard__price__quanty">
                 <span className="productcard__price__currency">$</span>
                 {props.unit_price}

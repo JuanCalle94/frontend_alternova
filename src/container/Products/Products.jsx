@@ -8,8 +8,8 @@ function Products() {
 
   return (
     <>
-      <h1>Alternova Shop</h1>
-      <h2>Productos</h2>
+      <h1>Welcome Alternova Shop</h1>
+      <h2>Products</h2>
       <div className="products">
           {data.products.map((product,index) => {
             return <ProductCard {...product} key={index} />;

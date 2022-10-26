@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
 
+:root {
+    --white: #e1e1e1;
+    --light-grey: #e1e1e1;
+    --light-greytwo: #3d3a50;
+    --dark-gray: #1a1c22;
+    --light-magenta: #f587b3;
+    --magenta-color: #e51c6d;
+  }
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;

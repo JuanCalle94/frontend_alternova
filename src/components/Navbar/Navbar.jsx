@@ -6,7 +6,7 @@ import './Navbar.scss';
 function Navbar() {
   return (
     <>
-      <img src={logo} alt="logo-Alternova" />
+      <img className='logo' src={logo} alt="logo-Alternova" />
     </>
   );
 }
