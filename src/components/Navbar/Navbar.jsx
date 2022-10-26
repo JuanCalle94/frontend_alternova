@@ -1,10 +1,13 @@
 import React from 'react';
 
+import logo from '../../assets/logo-Alternova.png'
 import './Navbar.scss';
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <>
+      <img src={logo} alt="logo-Alternova" />
+    </>
   );
 }
 
