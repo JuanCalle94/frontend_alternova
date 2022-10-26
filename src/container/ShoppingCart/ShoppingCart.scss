@@ -7,4 +7,10 @@
     @media screen and (min-width: 1025px) {
         grid-column: 3/4;
     }
+
+    &__order__products {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
