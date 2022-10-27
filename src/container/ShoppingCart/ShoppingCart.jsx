@@ -8,6 +8,9 @@ import './ShoppingCart.scss';
 function ShoppingCart() {
 
   const { cartItems } = useContext(CartContext);
+  const total = cartItems.reduce(
+    (previous,current) => previous + current.amount * current.unit_price,0
+  )
 
   return (
     <>
@@ -23,7 +26,7 @@ function ShoppingCart() {
                 })}
               </div>
             )}
-            <h2>Total: $</h2>
+            <h2>Total: ${total}</h2>
         </div>
     </section>
     </>

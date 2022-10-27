@@ -1,9 +1,12 @@
-import React from "react";
-
+import React, {useContext} from "react";
+import { CartContext } from "../../context/CartContext"
 import defaultImg from "../../assets/defaultimg.png";
 import "./ProductCart.scss";
 
 function ProductCart(props) {
+
+  const { deleteItemInCart, addItemToCart } = useContext(CartContext);
+
   return (
     <>
       <div className="productcart">
@@ -17,9 +20,14 @@ function ProductCart(props) {
               <p className="productcart__price__title">Price:</p>
               <p className="productcart__price__quanty">
                 <span className="productcart__price__currency">$</span>
-                {props.unit_price}
+                {props.amount * props.unit_price}
               </p>
             </div>
+            <div className="productcart__buttons__container">
+            <button className="productcart__buttons plas" onClick={()=> addItemToCart(props)}>+</button>
+            <p>{props.amount}</p>
+            <button className="productcart__buttons" onClick={()=> deleteItemInCart(props)}>x</button>
+          </div>
           </div>
         </div>
       </div>
