@@ -1,4 +1,6 @@
 .cart {
+    display: flex;
+    flex-direction: column;
 
     @media screen and (min-width: 426px) {
         grid-column: 2/3;
@@ -16,12 +18,12 @@
 
         h2 {
             margin-top: 30px;
-            padding: 20px 60px;
+            padding: 15px 60px;
             text-align: right;
             font-size: 20px;
             font-weight: 700;
             color: var(--white);
-            background-color: var(--magenta-color);
+            background-color: var(--light-greytwo);
 
             .currency {
                 font-size: 12px;
@@ -33,5 +35,32 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    &__checkout {
+        align-self: flex-end;
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid var(--magenta-color);
+        margin-top: 20px;
+        padding: 15px 60px;
+        width: 100%;
+
+        &:hover {
+            background-color: var(--magenta-color);
+        }
+
+        &:hover .cart__checkout__text {
+            color: var(--white);
+        }
+
+        &__text {
+            font-size: 16px;
+            color: var(--magenta-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            transition: all .2s;
+        }
     }
 }
