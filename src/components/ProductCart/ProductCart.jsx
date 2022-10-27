@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import { CartContext } from "../../context/CartContext"
 import defaultImg from "../../assets/defaultimg.png";
+import { motion } from "framer-motion";
 import "./ProductCart.scss";
 
 function ProductCart(props) {
@@ -9,7 +10,12 @@ function ProductCart(props) {
 
   return (
     <>
-      <div className="productcart">
+      <motion.div className="productcart"
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="productcart__img">
           <img src={props.image ? props.image : defaultImg} alt="defaultimg" />
         </div>
@@ -30,7 +36,7 @@ function ProductCart(props) {
           </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
