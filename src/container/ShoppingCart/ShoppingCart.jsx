@@ -18,7 +18,7 @@ function ShoppingCart() {
       <h2 className='title__h2'>ShoppingCart</h2>
       <div className="cart__order">
             {cartItems.length === 0 ? (
-              <p>Tu Carrito esta Vacio</p>
+              <p className="cart__order__empty">Your cart is empty</p>
             ) : (
               <div className="cart__order__products">
                 {cartItems.map((item,index) => {
@@ -26,7 +26,7 @@ function ShoppingCart() {
                 })}
               </div>
             )}
-            <h2>Total: ${total}</h2>
+            <h2>Total: <span className="currency"> $</span>{total}</h2>
         </div>
     </section>
     </>

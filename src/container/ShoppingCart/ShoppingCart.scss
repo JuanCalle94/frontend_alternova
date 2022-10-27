@@ -8,6 +8,27 @@
         grid-column: 3/4;
     }
 
+    &__order {
+        &__empty{
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        h2 {
+            margin-top: 30px;
+            padding: 20px 60px;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--white);
+            background-color: var(--magenta-color);
+
+            .currency {
+                font-size: 12px;
+            }
+        }
+    }
+
     &__order__products {
         display: flex;
         flex-direction: column;

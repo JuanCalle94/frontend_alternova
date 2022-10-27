@@ -24,9 +24,9 @@ function ProductCart(props) {
               </p>
             </div>
             <div className="productcart__buttons__container">
-            <button className="productcart__buttons plas" onClick={()=> addItemToCart(props)}>+</button>
+            <button className="productcart__buttons" onClick={()=> addItemToCart(props)}>+</button>
             <p>{props.amount}</p>
-            <button className="productcart__buttons" onClick={()=> deleteItemInCart(props)}>x</button>
+            <button className="productcart__buttons" onClick={()=> deleteItemInCart(props)}>-</button>
           </div>
           </div>
         </div>
