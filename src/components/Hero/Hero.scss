@@ -10,11 +10,6 @@
         font-size: 40px;
         line-height : 35px;
         font-weight: 900;
-
-        @media screen and (min-width: 426px) {
-            font-size: 55px;
-            line-height : 50px;
-        }
     
         @media screen and (min-width: 1200px) {
             font-size: 80px;
@@ -30,11 +25,22 @@
     &__line {
         z-index: 5;
         position: absolute;
-        left: 32%;
-        bottom: 30%;
+        left: 10%;
+        bottom: 37%;
 
-        height: 10px;
-        width: 250px;
+        height: 3%;
+        width: 100px;
         background-color: var(--magenta-color);
+
+        @media screen and (min-width: 426px) {
+            left: 28%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            left: 32%;
+            bottom: 30%;
+    
+            width: 250px;
+        }
     }
 }

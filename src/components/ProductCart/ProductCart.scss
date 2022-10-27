@@ -73,6 +73,7 @@
   }
 
   &__buttons {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,4 +95,8 @@
   @media screen and (min-width: 1200px) {
     border-radius: 20px;
   }
+}
+
+.out__stock {
+  background-color: var(--light-magenta);
 }

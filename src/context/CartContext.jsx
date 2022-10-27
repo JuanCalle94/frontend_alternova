@@ -25,7 +25,7 @@ export function CartProvider({ children }) {
         if (inCart){
             setCartItems(
                 cartItems.map((productInCart => {
-                    if (productInCart.name === product.name){
+                    if (productInCart.name === product.name && product.stock > productInCart.amount ){
                         return {...inCart, amount: inCart.amount + 1}
                     } else {
                         return productInCart
