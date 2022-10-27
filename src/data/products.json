@@ -3,17 +3,20 @@
         {
             "name": "redbull",
             "unit_price": 5000,
-            "stock": 5
+            "stock": 5,
+            "image":"https://i.ibb.co/t4b0j36/redbull.jpg"
         },
         {
             "name": "rice",
             "unit_price": 2000,
-            "stock": 0
+            "stock": 0,
+            "image":"https://i.ibb.co/cgNw2K6/rice.jpg"
         },
         {
             "name": "papitas de limón margarita",
             "unit_price": 1500,
-            "stock": 1
+            "stock": 1,
+            "image":"https://i.ibb.co/HVNX5xk/papas.jpg"
         },
         {
             "name": "meat / pound",
