@@ -30,9 +30,9 @@ function ProductCart(props) {
               </p>
             </div>
             <div className="productcart__buttons__container">
-            <button className={props.amount >= props.stock ? 'productcart__buttons  out__stock' : 'productcart__buttons'} onClick={()=> addItemToCart(props)}>+</button>
-            <p>{props.amount}</p>
             <button className="productcart__buttons" onClick={()=> deleteItemInCart(props)}>-</button>
+            <p>{props.amount}</p>
+            <button className={props.amount >= props.stock ? 'productcart__buttons  out__stock' : 'productcart__buttons'} onClick={()=> addItemToCart(props)}>+</button>
           </div>
           </div>
         </div>

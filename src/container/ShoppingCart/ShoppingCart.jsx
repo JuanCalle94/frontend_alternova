@@ -8,17 +8,22 @@ import "./ShoppingCart.scss";
 function ShoppingCart() {
   const { cartItems, setCartItems } = useContext(CartContext);
   const total = cartItems.reduce(
-    (previous, current) => previous + current.amount * current.unit_price,
-    0
+    (previous, current) => previous + current.amount * current.unit_price, 0
   );
 
   const checkout = (event) => {
     event.preventDefault();
 
-    /*     const cartJson = JSON.stringify(cartItems);
-    const blob = new Blob ([cartJson], {type: "text/plain;charset=utf-8"})
-    saveAs (blob , "prueba.json");
- */
+    const cartJson = {
+      products: cartItems,
+      total: total
+    };
+
+    const shoppingRecord = JSON.stringify(cartJson);
+
+    const blob = new Blob ([shoppingRecord], {type: "text/plain;charset=utf-8"})
+    saveAs (blob , "compra.json");
+
     localStorage.clear();
     setCartItems([]);
   };
